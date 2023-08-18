@@ -1,0 +1,39 @@
+local Button = Tab:CreateButton({
+	Name = "op arbiter [Sledge King]",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"]
+    perk.name = "Arbiter but you fr SQ"
+    perk.desc = "You Betray SQ And Join The Angent Team."
+    perk.pros = { "More Ammunition.","Speed, No Fall Dmg, No Explosive dmg, and take barely any HP upon shot.","0 Cooldown","Faster Swings"};
+    perk.cons = {"There are no downsides, your just OP as hell."}
+   perk.activename = "Arbiter.exe"
+   perk.activedetails = "Stun arm?"
+   perks.atkmod = 1950 -- 2 taps any bosses
+   perks.healthmod = 250
+   perks.defmod = 1500 -- take 1 dmg per hit except explosion
+   perks.stammod = 1950
+   perks.shovemod = 1950
+   perks.lightatkspeed = 100
+    perks.heavyatkspeed = 1950 
+    perks.recoilmod = 2000
+    perks.accmod = 1950
+     perks.reloadmod = 900
+     perks.noaimmod = false
+     perks.scavmod = 4000
+     perks.harvestmod = 100
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -55 
+    end,
+
+    
